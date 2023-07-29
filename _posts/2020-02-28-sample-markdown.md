@@ -29,7 +29,7 @@ To collect data about the whales one has properly to distinguish whale sounds fr
 
 
 ### [Orca-Spot](https://www.nature.com/articles/s41598-019-47335-w)
-#### ORCA-SPOT uses deep learning techniques, specifically convolutional neural networks (CNNs), that manage the binary classification problem, Whale sound or noise
+#### ORCA-SPOT uses deep learning techniques, specifically convolutional neural networks (CNNs), that manage the binary classification problem: Whale sound or noise
 ORCA-SPOT architecture is built upon the principles of a ResNet. 
 ResNet is a form of convolutional neural network used primarily for image processing.
 The developers chose ResNet 18 as a base design for the Orca Spot. 
@@ -105,9 +105,13 @@ After the model learns the salient features of each spectrogram image, spectral 
 To Properly evaluate unsupervised Clustering, a comparison has been made to the supervised Classification model. This model has the same structure as Orca-Spot. However, the output is connected to a 12-D layer, to classify between 12 different call types, that have been trained to recognize. 
 
 ![](https://communicationWhales.github.io/assets/img/matrix.png)
+
+
 The confusion matrix clearly visualizes the comparison between the supervised(left) and unsupervised(right). The supervised classification reached around 85% accuracy, whereas, for the unsupervised model, there were a lot of misclassifications and reached around 60% accuracy. Nevertheless, does it mean the model was wrong?
 
  ![](https://communicationWhales.github.io/assets/img/classifications.png)
+
+
 In the image above, for example in cluster C, we have two different spectrogram images, which the clustering algorithm grouped together, as they share the same features, thus viewing them as the same call type. However, humans classified them as different call types, specifically N07 and N09. This raises the question, did the humans misclassify them, or did the unsupervised clustering?
 
 ### [Orca-Slang](https://www.researchgate.net/profile/Steven-Ness/publication/354220681_ORCA-SLANG_An_Automatic_Multi-Stage_Semi-Supervised_Deep_Learning_Framework_for_Large-Scale_Killer_Whale_Call_Type_Identification/links/62059b4e634ff774f4c1e9c8/ORCA-SLANG-An-Automatic-Multi-Stage-Semi-Supervised-Deep-Learning-Framework-for-Large-Scale-Killer-Whale-Call-Type-Identification.pdf)
@@ -132,15 +136,14 @@ A new data point is classified based on its similarity relative to all the exist
 
 
 ## [Communication- Language Model](https://www.sciencedirect.com/science/article/pii/S2589004222006642)
-In order to build Communication-Language Model, acoustic building blocks need to be identified. This includes recognizing basic units or phonetics in the whale vocalizations, by looking for patterns in their vocalizations, much like vowels and consonants in human speech. 
-Moreover, we need to identify the grammatical structure, like determining the rules that govern the arrangement of these basic units, much like the syntax in human languages. Furthermore, in order to prevent building a "whale-chat bot" that can communicate with sperm whales without us understanding, we need to link the behavioral data with the codas.
+The identification of acoustic building blocks is necessary to construct a communication-language model. This involves identifying basic elements or phonetics in whale vocalizations by listening for patterns, much as vowels and consonants in human speech. Additionally, we must determine the grammatical structure, which entails figuring out the rules that control how these fundamental building blocks are arranged, much like the syntax in human languages. Furthermore, in order to prevent building a "whale-chat bot" that can communicate with sperm whales without us understanding, we need to link the behavioral data with the codas.
 As far as we know, a Language Model hasn't been implemented yet, however, a roadmap has been laid out. They intend to use unsupervised translation. An [example](https://www.youtube.com/watch?v=Qm02X0aE8uU&t=242) here shows how it should work.
 ![](https://communicationWhales.github.io/assets/img/document_5341304067555603485.gif)
-We have here two different languages. Each word produces multi-dimensional vector representations known as embeddings. When these embeddings of different words are grouped together(**sentence**), they create a geometrical shape. If the shape of these different languages is aligned, it means that they have the same meaning. With this unsupervised approach, an association can be determined from two different languages, right from the embeddings. But we'll need an incredible amount of **DATA** for this to work. Not simply codas, but also data regarding behavior, geographical location, biological, etc. 
+We have here two different languages. Each word generates through an encoder embedding, which is a multidimensional vector representation. When these embeddings of different words are grouped together(**sentence**), they create a geometrical shape. If the shape of these different languages is aligned, it means that they have the same meaning. With this unsupervised approach, an association can be determined from two different languages, right from the embeddings. But we'll need an incredible amount of **DATA** for this to work. Not simply codas, but also data regarding behavior, geographical location, biological, etc. 
 
 
 ## Conclusion
-After discussing the model of the study and observing the progress made one could conclude that the potential shown in this field seems to be promising. As fascinating and interesting as interspecies communication sounds there is still a lot of progress to be made. In theory, one could say that the goals are achievable in the foreseeable future but in real life, it never goes as planned. But what is known for sure is that through this research we will obtain new knowledge, and if this goal is not met, the acquired information will be used in other fields that will benefit the scientific community.
+After discussing the model of the study and observing the progress made one could conclude that the potential shown in this field seems to be promising. As fascinating and interesting as interspecies communication sounds there is still a lot of progress to be made. In theory, one could say that the goals are achievable in the foreseeable future but in real life, it may never go as planned. But what is known for sure is that through this research we will obtain new knowledge, and if this goal is not met, the acquired information will be used in other fields that will benefit the scientific community.
 
 
 

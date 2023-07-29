@@ -83,7 +83,7 @@ The expansive layer (upsampling) then makes use of this context to localize—
 ![](https://communicationWhales.github.io/assets/img/u-net.png)
 
 #### Results
-The accuracy represents the overall correctness of the system in identifying true positives and true negatives in the dataset. In this case, the system performs slightly better without Orca Clean improving the 94.97% accuracy to 96.04%.
+The accuracy represents the overall correctness of the system in identifying true positives and true negatives in the dataset. In this case, the system performs slightly better with Orca Clean improving the 94.97% accuracy to 96.04%.
 Precision is the proportion of true positive results among all the positive results predicted by the system. A higher precision indicates a lower number of false positives. The difference in precision, in this case, was very minimal but significant enough to drop the false-positive-rate from 4.36% to 1.77% 
 
 ![](https://communicationWhales.github.io/assets/img/noiser.png)

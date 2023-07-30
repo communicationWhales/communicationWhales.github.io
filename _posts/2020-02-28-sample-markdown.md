@@ -31,7 +31,7 @@ To collect data about the whales one has properly to distinguish whale sounds fr
 ### [Orca-Spot](https://www.nature.com/articles/s41598-019-47335-w)
 #### ORCA-SPOT uses deep learning techniques, specifically convolutional neural networks (CNNs), that manage the binary classification problem: Whale sound or noise
 ORCA-SPOT architecture is built upon the principles of a ResNet. 
-ResNet is a form of convolutional neural network used primarily for image processing.
+ResNet is a form of convolutional neural network largely used for image processing.
 The developers chose ResNet 18 as a base design for the Orca Spot. 
 ![Experiment between different Variants of ResNet](https://communicationWhales.github.io/assets/img/Resultsorca-spot.png)
 

@@ -52,7 +52,7 @@ Using dB-normalization (decibel normalization) the audio signal's intensity (or 
 ##### Results
  ![](https://communicationWhales.github.io/assets/img/results_2.png)
  Both models were tested on 23,511 "Orchive" tapes.
-**Orca Spot 1** spotted 19,056 audio clips in which 16,646 segments were true killer whale and  2,410 were falsely classified. 
+**Orca Spot 1** spotted 19,056 audio clips in which 16,646 segments were true killer whale sounds and  2,410 were falsely classified. 
 **Orca Spot 2**  spotted 19,211 audio clips, in which 17,451 segments were true killer whale sounds and 1,760 segments were falsely classified. 
 
 
